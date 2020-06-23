@@ -1,0 +1,21 @@
+example <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)
+
+install.packages("ggplot2")
+install.packages(c("ggplot2", "devtools", "lme4"))
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("GenomicFeatures")
+
+install.packages("devtools")
+library(devtools)
+install_github("author/package")
+
+library(ggplot2)
+old.packages()
+update.packages()
+install.packages("packagename")
+detach("package:ggplot2", unload=TRUE)
+remove.packages().
+sessionInfo()
+version
+help()
